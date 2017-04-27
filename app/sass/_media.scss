@@ -1,6 +1,19 @@
 @import "bourbon/bourbon";
 
 /*==========  Desktop First Method  ==========*/
+@media only screen and (min-width : 1400px){
+  .logo{
+    width: 70%;
+    margin: 25px 0;
+  }
+  .menu{
+    padding-top: 50px;
+  }
+  .phones{
+    padding-top: 25px;
+    margin-top: 50px;
+  }
+}
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px){
