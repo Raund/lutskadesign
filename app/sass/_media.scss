@@ -1,86 +1,358 @@
 @import "bourbon/bourbon";
 
 /*==========  Desktop First Method  ==========*/
-@media only screen and (min-width : 1400px){
-  .logo{
+@media only screen and (min-height : 800px) and (min-width : 1201px){
+  .logo {
     width: 70%;
     margin: 25px 0;
   }
-  .menu{
+  .menu {
     padding-top: 50px;
   }
-  .phones{
+  .phones {
     padding-top: 25px;
     margin-top: 50px;
+  }
+}
+@media only screen and (min-width : 1400px){
+  .description-wrap{
+    right: 10%;
   }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px){
+  .sidebar-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 5px 20px;
+    background-color: rgba(165,155,147,.9);
+    text-align: left;
+    z-index: 555;
+  }
+  .logo{
+    width: 25px;
+  }
+  .menu{
+    float: right;
+    padding: 20px 0 0 0;
+    border: none;
+  }
+  .menu-item{
+    display: inline-block;
+    margin-left: 10px;
+    padding: 0;
+    font-size: 13px;
+    letter-spacing: initial;
+  }
+  .phones{
+    margin-top: -55px;
+    margin-left: 40px;
+    padding: 5px 0;
+    border-top: none;
+  }
+  .phones-item{
+    padding-top: 0;
+    color: #fff;
+    font-size: 18px;
+  }
+  .langs{
+    top: 70px;
+  }
+  .slide-title_wrap{
+    top: 100px;
+    left: 10%;
+    width: 80%;
+  }
+  .description-wrap{
+    right: 9%;
+  }
+  .about-section{
+    background-position: 0 40%;
+  }
+  .static-gallery{
+    padding: 40px 50px;
+  }
+  .more_portfolio{
+    padding-left: 0;
+  }
+  .footer .wrapper{
+    padding-left: 60px;
+  }
+  .section-portfolio,
+  .calendar-section,
+  .section-publication,
+  .calendar-item-page-section{
+    padding: 80px 20px 40px 50px;
+  }
+  .services-section{
+    padding: 80px 20px 40px;
+  }
+  .portfolio-item{
+    width: 47%;
+  }
+  .publication-item{
+    width: 30%;
+  }
+  .first-img{
+    width: 63%;
+    margin-left: 0;
+  }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+  .logo{
+    width: 20px;
+  }
+  .menu-item{
+    display: inline-block;
+    padding: 0;
+    margin-left: 5px;
+    font-size: 11px;
+    letter-spacing: initial;
+  }
+  .phones{
+    margin-top: -45px;
+  }
+  .menu{
+    padding-top: 15px;
+  }
+  .phones-item{
+    font-size: 15px;
+  }
+  .langs{
+    top: 60px;
+  }
+  .about-section{
+    background-size: 100%;
+    background-position: 0 10%;
+  }
+  .description-wrap{
+    top: auto;
+    bottom: 5%;
+    width: 80%;
+    text-align: center;
+    text-shadow: 0 0 3px #000;
+  }
+  .hr-1{
+    margin: 1.4em auto;
+  }
+  .static-gallery{
+    padding: 30px 15px;
+  }
+  .footer .news{
+    display: none;
+  }
+  .footer .center{
+    margin-left: 0;
+    text-align: left;
+  }
+  .footer .social{
+    margin-left: 0;
+  }
+  .service-item-description-wrap{
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .service-item:nth-child(2n) .service-item-description-wrap{
+    float: none;
+  }
+  hr{
+    margin: 25px auto;
+  }
+  .service-item-img{
+    width: 100%;
+    height: inherit;
+    float: none;
+  }
+  .publication-item{
+    width: 44%;
+  }
+  .publication-item-title {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+  }
+  .calendar-item{
+    width: 47%;
+  }
+  .calendar-item-page-img{
+    height: 400px;
+  }
+  .calendar-item-page-title {
+    margin: 40px 28px 20px;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  .contact-info{
+    top: auto;
+    bottom: 30px;
+  }
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px){
+  .phones {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 250px;
+    margin-left: -125px;
+    margin-top: 0;
+    text-align: center;
+  }
+  .phones-item{
+    font-size: 18px;
+  }
+  .menu{
+    float: none;
+    padding-top: 60px;
+  }
+  .menu-item {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    padding: 5px 0;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: initial;
+  }
+  .logo{
+    position: absolute;
+    width: 70px;
+  }
+  .sidebar-menu{
+    top: -267px;
+    transition: all .5s ease;
+  }
+  .sidebar-menu.active{
+    top: 0;
+    transition: all .5s ease;
+  }
+  .button-menu{
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgba(165,155,147,.9);
+    color: #ffffff;
+    font-family: "SolomonSansNormal", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    z-index: 999;
+    transition: all .5s ease;
+  }
+  .button-menu.active {
+    top: 267px;
+    transition: all .5s ease;
+  }
+  .owl-theme .owl-controls{
+    display: none;
+  }
+  .footer .center{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer .social{
+    margin: 0 auto;
+  }
+  .footer .contacts{
+    float: none;
+    text-align: center;
+  }
+  .section-portfolio,
+  .calendar-section,
+  .section-publication,
+  .calendar-item-page-section{
+    padding: 60px 20px 10px 20px;
+  }
+  .portfolio-item{
+    width: 100%;
+    margin-right: 0;
+  }
+  .publication-item{
+    width: 42%;
+  }
+  .calendar-item{
+    width: 95%;
+  }
+  .calendar-item-page-img {
+    height: 300px;
+  }
+  .calendar-item-page-title {
+    margin: 20px 10px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  .calendar-item-page-description{
+    padding: 0 10px;
+  }
+  .calendar-item-page-description p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .calendar-item-page-description img {
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .calendar-item-slide{
+    height: 300px;
+  }
+  .calendar-item-page-wrap-footer {
+    margin: 26px 35px 15px;
+    padding: 15px 0;
+    border-top: 2px solid;
+  }
+  .first-img {
+    width: 100%;
+    height: 900px;
+    margin-left: 0;
+    background-size: cover;
+    background-position: center 0;
+  }
+  .second-img{
+    display: none;
+  }
+  .contact-info{
+    width: 300px;
+    text-align: center;
+  }
 }
-
-/*
-!*Disable Animation on Mobile Devices*!
-.animated
-  !*CSS transitions*!
--o-transition-property: none !important
--moz-transition-property: none !important
--ms-transition-property: none !important
--webkit-transition-property: none !important
-transition-property: none !important
-!*CSS transforms*!
--o-transform: none !important
--moz-transform: none !important
--ms-transform: none !important
--webkit-transform: none !important
-transform: none !important
-!*CSS animations*!
--webkit-animation: none !important
--moz-animation: none !important
--o-animation: none !important
--ms-animation: none !important
-animation: none !important
-*/
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px){
-}
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px){
-
-}
-
-/*==========  Mobile First Method  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px){
-
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px){
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px){
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px){
-
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px){
-
+  .about-section{
+    min-height: 900px;
+    background-size: cover;
+    background-position: center;
+  }
+  .service-item-description-wrap{
+    padding: 20px 10px;
+  }
+  .services-content{
+    opacity: 1;
+  }
+  .service-item-img{
+    height:initial;
+    padding:10px 0;
+  }
+  .publication-item{
+    width: 90%;
+  }
+  .first-img{
+    height: 700px;
+  }
+  .contact-info {
+    left: 50%;
+    margin-left: -150px;
+  }
 }
