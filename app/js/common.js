@@ -3,6 +3,14 @@ $(function(){
 /***********height screen*************/
     $('.slide,.header-section, .portfolio-item-main').css({height : $( window ).height()});
 /***********END height screen*************/
+    
+/**********open-close menu**************/
+    $('.button-menu').click(function(){
+        $(this).toggleClass('active');
+        $('.sidebar-menu').toggleClass('active');
+        $('.button-menu .icon').toggleClass('menu-i').toggleClass('close');
+    });
+/**********END open-close menu**************/
 
 /***********setting slider on main*************/
     $(".owl-carousel").owlCarousel({
@@ -125,13 +133,5 @@ $(function(){
         }
     });
 /**********END hide lang**************/
-
-/**********open-close menu**************/
-    $('.button-menu').click(function(){
-        $(this).toggleClass('active');
-        $('.sidebar-menu').toggleClass('active');
-        $('.button-menu .icon').toggleClass('menu-i').toggleClass('close');
-    });
-/**********END open-close menu**************/
 
 });
